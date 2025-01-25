@@ -1,0 +1,504 @@
+/*? 4º Aula: Finalmente estamos vendo o CSS Externo <3 */
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: green;
+}
+
+h4{
+    color: blue;
+    font-size: 50px;
+}
+
+
+/* p{
+    color: blueviolet;
+} */
+
+/* ? 9º Aula: Classes */
+.paragrafo{
+    background-color: black;
+    color: aqua;
+    padding: 8px;
+}
+
+/* ? 10º Aula: Ids */
+#titulo_exclusivo{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* ? 11º Aula: multiplas regras, ordem do css */
+h2{
+    border-bottom: 2px solid red; 
+    /* ? tag < class & id */
+}
+
+.titulo{
+    border-bottom: 2px solid blue;
+    /* ? class < id */
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+    /* ? id > class */
+}
+
+/* ? 12º/13º Aula: Cores e nomes de cores */
+.color-name{
+    color: crimson;
+}
+
+/* ? 12º/14º Aula: Cores em HEX ou Hexadecimal  */
+.hex{
+    color: #55a398;
+}
+
+.hex_2{
+    color: #28b462;
+}
+
+/* ? 12º/15º Aula: Mais sobre hex */
+.simples-hex{
+    color: #333;
+}
+.simples-hex-2{
+    color: #a5f;
+}
+
+/* ? 12º/16º Aula: RGB */
+.rgb{
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb{
+    color:  rgb(24, 6985,845);
+}
+
+/* ? 12º/17º Aula: RGBA */
+.rgba{
+    color: rgba(100, 199, 45, 0.3);
+}
+
+/*  ? 12º/18º Aula: HSL  */
+.hsl{
+    color: hsl(100, 20%, 50%);
+}
+
+.hsl-2{
+    color: hsl(201, 44%, 69%);
+}
+
+/* ? 19º Aula: Background color */
+.bg{
+    background-color: #000000;
+    color: yellow;
+}
+
+.bg-2{
+    background-color: rgb(200, 20, 40);
+    color: #00eaff;
+}
+
+/* ? 20º Aula: Background opacity */
+.bg-opacity{
+    background-color: green;
+    opacity: 0.2;
+}
+.bg-opacity-2{
+    background-color: #999;
+    color: #000000;
+    opacity: 0.8;
+}
+
+/* ? 20º/21º Aula: Resolvendo o problema da opacidade com RGBA */
+.rgba-opacity{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+/* ? 22º Aula: Imagem no background */
+.bg-image{
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: white;
+}
+
+/* ? 22º/23º Aula: Centralizando a imagem de background */
+.not-center-bg, .center-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/bridge.jpg");
+}
+
+.center-bg{
+    background-position: center center;
+    background-size: cover;
+}
+
+/* ? 24º Aula: Box Model [só teoria] */
+/* ? 25º Aula: Largura e Altura  */
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2{
+    height: 300px;
+    background-color: #333;
+}
+
+/* ? 26º Aula: Padding */
+.without-padding, .padding{
+    background-color: #111;
+    color: #fff;
+}
+
+.padding{
+    background-color: #222;
+    padding: 20px;
+}
+
+/* ? 26º/27º Aula: Padding individual  */
+.padding-individual{
+    background-color: #222;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/* ? 26º/28º Aula: Shorthand padding */
+.shorthand-padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+    padding: 10px 20px;
+}
+
+/* ? 29º Aula: Padding e width */
+.without-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* ? 30º Aula: Border */
+.border{
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2{
+    border: 2px dotted #933;
+    padding: 25px;
+} 
+
+/* ? 31º Aula: Bardas individuais */
+.border-left{
+    border-left: 3px solid red;
+    background-color: #222;
+}
+
+.border-bottom{
+    border-bottom: 5px double blue;
+    background-color: #222;
+}
+
+ /* ? 32º Aula: Borda arredondada */
+.rounded-p{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.rounded-p-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* ? 33º Aula: Margin */
+.margin{
+    background-color: #222;
+    margin: 10px; /*! Da um espaçamento externo*/
+
+}
+
+.margin-top{
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+}
+
+.margin-shorthand{
+    background-color: #333;
+    margin: 5px 10px 15px 20px;
+}
+
+/* ? 34º Aula: Unindo conceitos de Box Model */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+}
+
+/* ? 35º Aula: Alinhamento de texto */
+.texto-align{
+    text-align: right;
+}
+
+.conteiner-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/*? 36º Aula: Decorando Textos */
+.underline{
+    text-decoration: underline;
+}
+
+.line-throung{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: red;
+}
+
+/* ? Text transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/* ? 38º Aula: Espaçamento entre letras */
+.space{
+    letter-spacing: 5px;
+}
+
+/* ? 39º Aula: Fontes */
+.serif{
+    font-family: Georgia;
+}
+
+.sans-serif{
+    font-family: Helvetica;
+}
+
+.monospace{
+    font-family: "Courier New";
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/* ? 40º Aula: Estilo da fonte */
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+/* ? 41º Aula: Font weight */
+.thin, .bold, .bolder{
+    font-family: Helvetica;
+}
+
+.thin{
+    font-weight: 100;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+/* ? 42º Aula: Font size */
+.small{
+    font-size: 6px;
+}
+
+.big{
+    font-size: 78px;
+}
+
+.inline-block{
+    background-color: greenyellow;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #000;
+    color: #fff;
+    margin: 10px;
+    display: block;
+}
+
+/* ? 44º Aula: Escondendo elementos */
+.invisible{
+    display: none;
+}
+
+/* ? 45º Aula: Sobre as positions*/
+/* ? Static (é o valor padrão) */
+.static{
+    position: static;
+    background-color: #a2363642;
+    color:black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/*? Relative*/
+.relative{
+    position: relative;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 85vw;
+}
+
+/*? Absolute*/
+.absolute{
+    position: absolute;
+    background-color: #2b2626;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/*? Relative com absolute*/
+.relative-conteiner{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.absolute-1, .absolute-2{
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+    background-color: pink;
+    position: absolute;
+}
+
+.absolute-1{
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* ? Position fixed */
+.fixed{
+    width: 100vw;
+    height: 50px;
+    border: 1px solid blue;
+    background-color: red;
+    margin-top: 120px;
+    position: fixed;
+    top: 0px;
+}
+
+/* ? Position sticky */
+.sticky{
+    width: 100vw;
+    height: 50px;
+    border: 1px solid #994;
+    background-color: green;
+    margin-top: 120px;
+    position: sticky;
+    top: 10px;
+}
+
+/* ? z-index */
+.absolute3, .absolute4, .absolute5{
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.absolute4{
+    top: 10px;
+    left: 10px;
+    background-color: #456;
+    z-index: 2;
+}
+.absolute5{
+    top: 40px;
+    left: 40px;
+    background-color: #789;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

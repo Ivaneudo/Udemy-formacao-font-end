@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- TODO: 1º e 2º aula -->
+     <!-- ? vimos a estutura básica do formulário e o action e method  -->
+    <h2>Fomulários HTML</h2>
+    <form action="#" method="post">
+        <section>
+            <label for="">Nome: </label>
+            <input type="text">
+
+            <!-- TODO: 3º e 4º aula -->
+             <!-- ? falamos sobre os atributos name do input e o for da label-->
+            <label for="age">Idade: </label>
+            <input type="text" name="age">
+        </section>
+
+        <!-- TODO: 6ºaula -->
+         <!-- ? Vendo o elemento select-->
+        <section>
+            <label for="jog">Selecione a sua profissão:</label>
+            <select name="job" id="">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+                <option value="outro">Outro</option>
+            </select>
+        </section>
+        <!-- TODO: 7º aula -->
+         <!-- ? Falamos sobre o selectd -->
+        <section>
+            <label for="contract">Você leu os termos de contrato?</label>
+            <select name="contract" id="">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </section>
+
+        <!-- TODO: 8º aula -->
+         <!-- ? Múltiplas seleções -->
+        <section>
+            <label for="itens">Selecione os itens desejados</label>
+            <select name="itens" id="" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijão">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="minho">Milho</option>
+            </select>
+        </section>
+
+        <!-- TODO: 9º aula -->
+         <!-- ? Elementos de textarea -->
+        <section>
+            <label for="comentarios">Escreva abaixo o que você achou do post:</label>
+            <textarea name="coment" id="" cols="30" rows="10"></textarea>
+        </section>
+
+        <!-- TODO: 10º aula -->
+         <!-- ? fieldset e legend -->
+        <section>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Nome: </label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome: </label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </section>
+
+        <!-- TODO: 11º aula -->
+         <!-- ? datalist -->
+        <section>
+            <label for="flavor">Escolha o sabor</label>
+            <input type="text" name="flavor" list="flavors">
+            <!-- ! A tag list é usada para linkar o input com o datalist a baixo. -->
+            
+            <datalist id="flavors">
+                <option value="Cereja"></option>               
+                <option value="Morango"></option>               
+                <option value="Abacaxi"></option>               
+                <option value="Chocolate"></option>               
+            </datalist>
+        </section>
+
+        <!-- TODO:  12º aula -->
+         <!-- ? input para senha -->
+
+        <section>
+            <label for="password">Digite sua senha: </label>
+            <input type="password">
+        </section>
+
+        <!-- TODO: 14º aula -->
+         <!-- ? input radio/radio button-->
+        <section>
+            <label for="car_model">Escola o modelo do seu carro: </label>
+            <section class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrare">Ferrari</label>
+                <input type="radio" value="renult" name="car_model">
+                <label for="renult">Renult</label>
+            </section>
+        </section>
+
+        <!-- TODO: 15º aula -->
+         <!-- ? input checkbox -->
+        <section>
+            <label for="optionais">Opcionais do carro: </label>
+            <section class="radio">
+                <input type="checkbox" name="optionais[]" value="big_tires">
+                <label for="big_tires">Pneus Grandes</label>
+            </section>
+            <section class="radio">
+                <input type="checkbox" name="optionais[]" value="turbo_engine">
+                <label for="turbo_engine">Motor Turbo</label>
+            </section>
+            <section class="radio">
+                <input type="checkbox" name="optionais[]" value="hybrid">
+                <label for="hybrid">Hibrido</label>
+            </section>
+        </section>
+
+        <!-- TODO: 16º aula -->
+         <!-- ? input data/date -->
+        <section>
+            <label for="birthday">Data de nascimento: </label>
+            <input type="date">
+        </section>
+
+        <!-- TODO: 17º aula -->
+         <!-- ? input para arquivos -->
+        <section>
+            <label for="image">Insira a sua imagem</label>
+            <input type="file">
+        </section>
+
+        <!-- TODO: 18º aula -->
+         <!-- ? input para números -->
+        <section>
+            <label for="salary">Quando você ganha no seu emprego atual</label>
+            <input type="number" name="salary">
+        </section>
+
+        <!-- TODO: 19º aula -->
+         <!-- ? input para e-mail -->
+        <section>
+            <label for="email">Digite seu e-mail: </label>
+            <input type="email" name="email">
+        </section>
+
+        <!-- TODO: 20º aula -->
+         <!-- ? atributo value -->
+        <section>
+            <label for="value">Digite algum valor: </label>
+            <input type="text" value="O meu valor é este" name="value">
+        </section>
+
+        <!-- TODO: 21º aula -->
+         <!-- ? atributo disabled -->
+        <section>
+            <label for="">Tente mudar o valor</label>
+            <input type="text" value="Não precisa preencher" disabled>
+        </section>
+
+        <!-- TODO: 22º aula -->
+         <!-- ? atributo placeholder -->
+        <section>
+            <label for="currentjob">Digite a sua profissão</label>
+            <input type="text" name="currentjob" placeholder="No que você está trabalhado agora?">
+        </section>
+
+        <!-- TODO: 23º aula -->
+         <!-- ? atributo required -->
+        <section>
+            <label for="birhyear">Ano nascimento: </label>
+            <input type="text" placeholder="Digite o ano que você nasceu" required>
+        </section>
+
+        <!-- TODO: 13º aula -->
+         <!-- ? Reiniciando o form -->
+        <input type="reset" value="Limpar">
+
+        <!-- TODO: 5º aula -->
+         <!-- ? Enviando dados de formulário -->
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+/*  TODO: 1º aula
+ ? div com class flex */
+body{
+    padding-bottom: 15px;
+}
+
+.flex{
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+/*  TODO: 2º aula
+    ? flex direction colum*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+/* TODO: 3º aula
+    ? wrap */
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* TODO 4º aula 
+    ?Justify-contant*/
+.center,
+.space-around,
+.space-between,
+.end{
+    border: 1px solid blue;
+    display: flex;
+}
+
+.center .box, 
+.space-around .box,
+.space-between .box,
+.end .box{
+    display: flex;width: 50px;
+    background-color: #ccc;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* TODO: 5º aula 
+    ? aling itens*/
+.aling-center,
+.flex-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.aling-center .box,
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.aling-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.stretch .box{
+    height: auto;
+}
+
+/* TODO: 6º aula
+    ? gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 35%;
+}
+
+/* TODO 7º aula */
+/* ? order */
+.order{
+    display: flex;
+    margin-top: 20px;
+}
+
+#one{
+    order: 1;
+}
+
+#two{
+    order: 2;
+}
+
+#three{
+    order: 3;
+}
+
+/* TODO: 8º aula */
+/* ? grow */
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow .big{
+    flex: 2;
+}
+
+/* TODO: 9º aula */
+/* ? basis */
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex: 1;
+}
+
+/* TODO: 10º aula */
+/* ? shrink */
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 120px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2;
+}
+
+/* TODO: 11º aula */
+/* ? flex shorthand */
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different{
+    flex: 3 1 400px;
+}
+
+/* TODO: 12º aula */
+/* ? auto alinhamento */
+.auto-alingment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.auto-alingment .different{
+    align-self: center;
+}

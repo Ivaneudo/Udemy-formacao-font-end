@@ -1,0 +1,18 @@
+/* ? 1º aula */
+body{
+    padding-bottom: 500px;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+section input, section label{
+    display: block;
+}
+
+/* TODO: 14º aula */
+/* ? input radio/radio button*/
+.radio label, .radio input, .radio span{
+    display: inline-block;
+}

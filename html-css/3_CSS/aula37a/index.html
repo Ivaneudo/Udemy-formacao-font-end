@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /*  3º Aula: Começamos a ver o CSS Interno*/
+        p{
+            /*color: gold;*/
+            font-size: 40px;
+        }
+    </style>
+    
+     <!-- ? 4º Aula: Finalmente estamos vendo o CSS Externo-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ?  6º Aula: Multiplos arquivos de CSS-->
+    <link rel="stylesheet" href="CSS/lists.css">
+
+    <!-- ? Desafio_2 -->
+    <link rel="stylesheet" href="CSS/title.css">
+</head>
+<body>
+    <!-- ? 1º Aula: Estamos vendo o CSS Inline -->
+    <h1 style="color: red;">Mudar cor com o CSS Inline</h1>
+    <h1 style="color: blue;">Outro título</h1>
+    <hr>
+
+    <!-- ? 2º Aula: Múltiplas regras -->
+    <h1 style="color: purple; font-size: 50px; border-bottom: 1px solid red;">Mudar cor e tamanho dafonte</h1>
+    <hr>
+
+    <!-- ? 3º Aula: Comçamos a ver o CSS Interno -->
+    <p>Eu fui estilizado pelo interno.</p>
+    <p>Mais um</p> 
+    <p>E mais outro</p>
+    <hr>
+
+    <!-- ? 50º sticky -->
+    <div class="sticky">
+        <span>Eu sou sticky!</span>
+    </div>
+
+    <!-- ? 4º Aula: Finalmente estamos vendo o CSS Externo <3 -->
+    <h3>Meu título verde</h3>
+    <hr>
+
+    <!-- ? 5º Aula: Ordem do CSS  (inline > interno = externo)-->
+    <p style="color: red;">Ordem do CSS</p>
+    <p>Ordem do CSS</p>
+    <hr>
+
+    <!-- ? 6º Aula: Multiplos arquivos de CSS -->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Abacaxi</li>
+    </ul>
+    <hr>
+
+    <!-- ? Desafio_2 -->
+    <h4>Nós iremos ser azuis</h4>
+    <h4>Com um font-size de 50px</h4>
+    <hr>
+
+    <!-- ? 7º Aula: Comentarios no CSS -->
+
+    <!-- ? 8º Aula: Classes e ids -->
+    <!-- ? 9º Aula: Classes -->
+    <p class="paragrafo">Algum texto</p>
+    <p class="paragrafo">Algum texto 2</p>
+    <p class="paragrafo">Algum texto 3</p>
+    <hr>
+
+    <!-- ? 10º Aula: Ids -->
+    <h1 id="titulo_exclusivo">Este é um título com Id</h1>
+    <hr>
+
+    <!-- ? 11º Aula: Multiplas regras, ordem do css -->
+    <h2 id="algum-titulo" class="titulo">Algum texto</h2>
+    <h2 class="titulo">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+    <hr>
+
+    <!-- ? 12º/13º Aula: Cores e nomes de cores -->
+    <p class="color-name">Texto para nome de cores </p>
+    <hr>
+
+    <!-- ? 12º/14º Aula: Cores em HEX ou Hexadecimal -->
+    <p class="hex">Paragrafo com HEX</p>
+    <p class="hex_2">2º paragrafo com HEX</p>
+    <hr>
+
+    <!-- ? 12º/15º Aula: Mais sobre hex -->
+    <p class="simples-hex">HEX simplificado</p>
+    <p class="simples-hex-2">HEX simplificado 2</p>
+    <hr>
+
+    <!-- ? 12º/16º Aula: RGB -->
+    <p class="rgb">Este foi estilizado com RGB</p>
+    <p class="mixed-rgb">Este foi estilizado com RGB</p>
+    <hr>
+
+    <!-- ? 12º/17º Aula: RGBA -->
+    <p class="rgba">Este foi estilizado com RGBA</p>
+    <hr>
+
+    <!-- ? 12º/18º Aula: HSL -->
+    <p class="hsl">Este foi estilizado com HSL</p>
+    <p class="hsl-2">Este foi estilizado com HSL</p>
+    <hr>
+
+    <!-- ? 19º Aula: Background color -->
+    <p class="bg">Mude o meu Background</p>
+    <h2 class="bg-2">Outra variação de Background</h2>
+    <hr>
+
+    <!-- ? 20º Aula: Background opacyte -->
+    <div class="bg-opacity">
+        <p>Estou aqui</p>
+    </div>
+    <div class="bg-opacity-2">
+        <p>Estou aqui quase visivel</p>
+    </div>
+    <hr>
+
+       <!-- ? 20º/21º Aula: Resolvendo o problema da opacidade com RGBA-->
+    <div class="rgba-opacity">
+        <h1>Este título precisa estar visivel</h1>
+    </div>
+    <hr>
+
+    <!-- ? 22º Aula: Imagem no background -->
+    <h1 class="bg-image">Este título tem uma imagem</h1>
+    <hr>
+
+    <!-- ? 22º/23º Aula: Centralizando a imagem de background -->
+    <div class="not-center-bg"></div>
+    <div class="center-bg"></div>
+    <hr>
+
+    <!-- ? 24º Aula: Box Model [Só teoria]-->
+    <!-- ? 25º Aula: Largura e Altura -->
+    <div class="height-width"></div>
+    <div class="height-width-2"></div>
+    <hr>
+
+    <!-- ? 26º Aula: Padding -->
+    <div class="without-padding">Este não tempadding</div>
+    <div class="padding">ESte tem padding</div>
+    <hr>
+
+    <!-- ? 26º/27º Aula: Padding individual -->
+    <p class="padding-individual">Este elemento tem padding diferentes</p>
+    <hr>
+        
+    <!-- ? 26º/28º Aula: Shorthand padding -->
+    <p class="shorthand-padding">Alugm texto<p>    
+    <p class="shorthand-padding-2">Alugm texto2</p>
+    <hr>
+
+    <!-- ? 29º Aula: Padding e width -->
+    <div class="without-border-box">
+        <p>Algum conteudo</p>
+    </div>
+    <div class="border-box">
+        <p>Algum conteudo</p>
+    </div>
+    <hr>
+
+    <!-- ? 30º Aula: Border -->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+    <hr>
+
+    <!-- ? 31º Aula: Bardas individuais -->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Bordar inferior</p>
+    <hr>
+
+    <!-- ? 32º Aula: Borda arredondada -->
+    <div class="rounded-p">Eu estou arredondado</div>
+    <div class="rounded-p-2">Eu estou arredondado</div>
+    <hr>
+
+    <!-- ? 33º Aula: Margin -->
+    <div class="margin">Eu tenho margem</div>
+    <div class="margin-top">Eu tenho margem no topo</div>
+    <div class="margin-shorthand">Eu tenho marge com shorthand</div>
+    <hr>
+
+    <!-- ? 34º Aula: Unindo conceitos de Box Model -->
+    <div class="box-model">
+        <p>Tenho todas as propriedades do Box Model</p>
+    </div>
+    <hr>
+
+    <!-- ? 35º Aula: Alinhamento de texto -->
+    <p class="texto-align">Alinhado a direita</p>
+    <div class="conteiner-center">
+        <h2>Estamos centralizado</h2>
+        <p>Algum texto</p>
+    </div>
+    <hr>
+
+    <!-- ? 36º Aula: Decorando Textos -->
+    <p class="underline">Eu tenho underline</p>
+    <p class="line-throung">Eu tenho um risco</p>
+    <a href="#" class="remove-underline">Sem underline</a>
+    <hr>
+
+    <!-- ? 37º Aula: Text transform-->
+    <p class="upper">Este texto é em caixa alta</p>
+    <p class="lower">ESTE É EM LOWER</p>
+    <hr>
+
+    <!-- ? 38º Aula: Espaçamento entre letras -->
+    <h2 class="space">Eu tenho um espaçamento maior</h2>
+    <hr>
+
+    <!-- ? 39º Aula: Fontes -->
+    <p class="serif">Serif fonte</p>
+    <p class="sans-serif">Sans Serif fonte</p>
+    <p class="monospace">Monospace fonte</p>
+    <p class="cursive">Cursive fonte</p>
+    <p class="fantasy">Fantasy fonte</p>
+    <hr>
+
+    <!-- ? 40º Aula: Estilo da fonte -->
+    <p class="italic">Eu estou em italico</p>
+    <p class="obliqui">Eu estou em obliquo</p>
+    <hr>
+
+    <!-- ? 41º Aula: Font weight -->
+    <p class="thin">Eu sou mais fino</p>
+    <p class="bold">Eu sou em bold</p>
+    <p class="bolder">Eu sou a maior fonte!</p>
+    <hr>
+
+    <!-- ? 42º Aula: Font size -->
+    <h4 class="small">Título pequeno</h4>
+    <h4 class="big">Título grande</h4>
+    <hr>
+
+    <!-- ? 43º Aula: Display -->
+    <div class="inline-block">A</div>
+    <div class="inline-block">B</div>
+    <div class="inline-block">C</div>
+    <span class="block">Teste</span>
+    <span class="block">Teste 2</span>
+
+    <!-- ? 44º Aula: Esscondendo elementos -->
+    <p class="invisible">Me encontre se poder</p>
+
+    <!-- ? 45º Aula: Sobre as positions-->
+    <!-- ? Static (é o valor padrão) -->
+    <div class="static">
+        <span>Eu sou estatico</span>
+    </div>
+
+    <!-- ? 46º Relative -->
+    <div class="relative">
+        <span>Sou relativo</span>
+    </div>
+
+    <!-- ? 47º Absolute -->
+    <div class="absolute">
+        <span>Eu sou absoluto</span>
+    </div>
+    <p>Eu sou um paragrado</p>
+
+    <!-- ? 48º Relative com absolute-->
+    <div class="relative-conteiner">
+        <div class="absolute-1">
+
+        </div>
+        <div class="absolute-2">
+            
+        </div>
+    </div>
+
+    <!-- ? 49º Position fixed -->
+    <div class="fixed">
+        <span>Estou fixo</span>
+    </div>
+
+    <!-- ? 50º Position sticky -->
+     <!-- Esse elemento foi levado para o inicio da pagian por fins didaticos -->
+    
+    <!-- ? 51º z-index -->
+    <div class="relative-conteiner">
+        <div class="absolute3"></div>
+        <div class="absolute4"></div>
+        <div class="absolute5"></div>
+    </div>
+</body>
+</html>

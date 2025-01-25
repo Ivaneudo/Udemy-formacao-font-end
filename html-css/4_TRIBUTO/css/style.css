@@ -1,0 +1,79 @@
+*{
+    font-family: helvetica;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.conteiner{
+    max-width: 1100px; /*Determinar que o conteineer não pode passar desse tamnho dentro da página html*/
+    background-color: white;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+.bolder{
+    font-weight: bold;
+}
+
+/* ? header */
+
+header{
+    text-align: justify;
+}
+
+.header-title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.header-p{
+    font-style: italic;
+}
+
+.imagem{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#imagem-GG{
+    width: 500px;
+}
+
+/* ? Biografia */
+.biografia{
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd; /**TODO: esse "dashed deixa a borda com um trasejado."*/
+    border-bottom: 1px dashed #ddd;
+}
+
+/* ? Cuirosidades */
+.curiosidades{
+    padding: 25px 0;
+    margin: 25px 0;
+    border-bottom: 1px dashed #ddd;
+
+}
+
+.curiosidades li{
+    margin: 25px 0;
+}
+
+/* ? Citações */
+.citação{
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.citação blockquote{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.citação p{
+    font-style: italic;
+}
