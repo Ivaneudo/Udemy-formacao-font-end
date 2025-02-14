@@ -5,12 +5,17 @@ import App from './App.jsx'
 
 import Contact from './routes/Contact.jsx'
 
+//TODO: 2 - Pagina de erro
+import ErrorPage from './routes/ErrorPage.jsx'
+
+//TODO: 3 - Configurando Router
 import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    errorElement: <ErrorPage/>
   }, 
   {
     path: "contact",
