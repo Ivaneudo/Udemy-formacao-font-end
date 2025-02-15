@@ -8,19 +8,34 @@ import Contact from './routes/Contact.jsx'
 //TODO: 2 - Pagina de erro
 import ErrorPage from './routes/ErrorPage.jsx'
 
-//TODO: 3 - Configurando Router
+//TODO: 1 - Configurando Router
 import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
+
+// TODO: 3 - componente base
+import Home from './routes/Home.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement: <ErrorPage/>
+    errorElement: <ErrorPage/>,
+
+    // 3 - componente base
+    children: [
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "contact",
+        element: <Contact/>
+      }
+    ]
   }, 
-  {
-    path: "contact",
-    element: <Contact/>
-  }
+  // {
+  //   path: "contact",
+  //   element: <Contact/>
+  // }
 ])
 
 createRoot(document.getElementById('root')).render(
